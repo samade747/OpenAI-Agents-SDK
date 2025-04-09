@@ -18,6 +18,10 @@ def demo_good_usage():
     person2 = Person("Alice", 17 )
     person3 = Person("Bob", 30, "n7FVZ@example.com", tags=["student", "part-time"])
 
+    print(demo_good_usage())
+    print(person1.is_adult())  # True
+    print(person2.is_adult())  # False
+    print(person3.is_adult())  # True
 
 
      
