@@ -28,7 +28,13 @@ print(string_result)  # Output: 'apple'
 
 
 
+# with dic
 
+K = TypeVar('K') # Type variable for keys
+V = TypeVar('V') # Type variable for values
+
+def get_item(container: Dict[K, V], key: K) -> V:
+    return container[key]
 
 
 
