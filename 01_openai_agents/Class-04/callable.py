@@ -29,14 +29,23 @@ class Calculator:
     def calculate(self, a: int, b: int) -> str:
         return self.operation(a, b)
 
+    def __call__(self, a: int, b: int) -> str:
+        return self.operation(a, b)
+
+
 def add_stringly(x: int, y: int) -> str:
     return str(x + y)
 
 calc = Calculator(operation=add_stringly)
 result = calc.calculate(1, 2)
 
+result = calc(8, 2)  # Using __call__ method
+ 
 
 print(result)  # Output: "3"
+print(callable(calc))  # Output: True
+
+print(calc(8, 2))  # Output: "10"
 print(callable(calc))  # Output: True
 
 
