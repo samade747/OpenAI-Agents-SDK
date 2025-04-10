@@ -43,7 +43,7 @@ T = TypeVar('T')
 
 # print(value)  # Output: 2
 
-
+ 
 # usage in data class  
 
 class Stack(Generic[T]):
