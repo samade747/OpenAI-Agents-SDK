@@ -1,6 +1,6 @@
 # 🤖 Understanding AI Agents and Their Ecosystem
 
-A structured breakdown of core AI agent concepts, tools, and workflows — based on live sessions with **Sir Qasim**, **Sir Ameen Alam**, **Sir Junaid**, and **Sir Zia Khan**.
+A structured breakdown of core AI agent concepts, tools, and workflows — based piaic sessions with **Sir Qasim**, **Sir Ameen Alam**, **Sir Junaid**, and **Sir Zia Khan**.
 
 ---
 
