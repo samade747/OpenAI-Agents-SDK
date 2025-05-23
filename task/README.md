@@ -93,8 +93,4 @@ class Runner(Generic[TContext]):
 
 ---
 
-## References
 
-* OpenAI Agents SDK documentation: [https://openai.github.io/openai-agents-python/ref/](https://openai.github.io/openai-agents-python/ref/)
-* Python `@dataclass`: [https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html)
-* Python Generics: [https://docs.python.org/3/library/typing.html#typing.TypeVar](https://docs.python.org/3/library/typing.html#typing.TypeVar)
