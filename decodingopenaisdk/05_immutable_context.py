@@ -71,3 +71,29 @@ async def test_preference_agent():
 
 # You can uncomment this in `main()` to test:
 # await test_preference_agent()
+
+
+# ✅ Example 2: Session Tracker Agent
+# Track topics discussed, mood, and number of messages.
+
+from datetime import datetime
+
+# Context to track session state
+class SessionContext:
+    def __init__(self):
+        self.messages_count = 0
+        self.topics_discussed: set[str] = set()
+        self.user_mood = "neutral"
+        self.start_time = datetime.now()
+
+    def add_message(self):
+        self.messages_count += 1
+
+    def add_topic(self, topic: str):
+        self.topics_discussed.add(topic)
+
+    def set_mood(self, mood: str):
+        self.user_mood = mood
+
+    def get_session_info(self) -> str:
+        return f"Messages: {self.messages_count}, Topics: {self.topics_discussed}, Mood: {self.user_mood}"
