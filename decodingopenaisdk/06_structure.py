@@ -39,6 +39,13 @@ class BasicUserInfo(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 
+#     ✅ Why use it?
+# Perfect for API responses or production environments
+
+# Guarantees schema consistency
+
+
+
 
 # =============================================================================
 # USE CASE 2: Enum-Based Strict Schema (Great for Classification)
@@ -61,6 +68,11 @@ class TaskClassification(BaseModel):
     priority: Priority = Priority.MEDIUM
     estimated_hours: int = 1
     requires_review: bool = True
+
+# ✅ Why use it?
+# Prevents incorrect values for fields like priority
+
+# Very useful for categorization/classification tasks
 
 
 
@@ -101,3 +113,8 @@ class ComplexUserProfile(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 # =============================================================================
+
+# ✅ Why use it?
+# Keeps your data modular and structured
+
+# Enables nested validation for real-world profiles
